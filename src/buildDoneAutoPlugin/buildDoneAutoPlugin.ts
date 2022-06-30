@@ -8,6 +8,8 @@ interface options {
 }
 const sftp = require('ssh2-sftp-client')
 const sftp = new sftp()
+
+// demo
 class BuildDoneAutoPlugin {
     /** 
     *@account {String} 服务器账号
