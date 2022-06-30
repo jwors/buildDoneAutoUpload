@@ -1,0 +1,25 @@
+{
+  "name": "builddoneautoupload",
+  "version": "1.0.0",
+  "description": "解决工作中的问题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwors/buildDoneAutoUpload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwors/buildDoneAutoUpload/issues"
+  },
+  "homepage": "https://github.com/jwors/buildDoneAutoUpload#readme",
+  "dependencies": {
+    "ssh2-sftp-client": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
