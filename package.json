@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jwors/buildDoneAutoUpload#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "ssh2-sftp-client": "^9.0.1"
   },
   "devDependencies": {
