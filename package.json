@@ -4,7 +4,7 @@
   "description": "解决工作中的问题",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,14 @@
   "homepage": "https://github.com/jwors/buildDoneAutoUpload#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "schema-utils": "^4.0.0",
     "ssh2-sftp-client": "^9.0.1"
   },
   "devDependencies": {
-    "jest": "^28.1.2"
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-jest": "^28.1.2",
+    "jest": "^28.1.2",
+    "webpack": "^5.73.0"
   }
 }

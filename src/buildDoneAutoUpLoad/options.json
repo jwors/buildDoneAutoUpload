@@ -1,0 +1,49 @@
+{
+    "type":"object",
+    "properties":{
+        "serverAccount":{
+            "description":"服务器账号",
+            "type":"string"
+        },
+        "serverPassword":{
+            "description":"服务器密码",
+            "type":"string"
+        },
+        "serverUrl":{
+            "description":"服务器地址",
+            "type":"string"
+        },
+        "port":{
+            "description":"端口",
+            "type":"number"
+        },
+        "localPath":{
+            "description":"本地build-dist之后的地址",
+            "type":"string"
+        },
+        "remotePath":{
+            "description":"远端目的文件地址",
+            "type":"string"
+        },
+        "projectName":{
+            "description":"项目名称",
+            "type":"string"
+        },
+        "webHookUrl":{
+            "description":"钉钉推送地址",
+            "type":"string"
+        },
+        "text":{
+            "description":"钉钉提示内容",
+            "type":"string"
+        },
+        "keyWord":{
+            "description":"机器人关键字",
+            "anyOf":[
+                { "type": "array" },
+                { "type": "string" }
+            ]
+        }
+    },
+    "additionalProperties":false
+}

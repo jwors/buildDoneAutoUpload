@@ -1,24 +1,31 @@
 const sftp = require('ssh2-sftp-client')
 const path = require('path')
+const {
+    validate
+} = require("schema-utils");
+const schema = require("./options.json");
 const upLoad = new sftp()
 const DingHint = require('../dingHint/dingHint.js')
 
 class BuildDoneAutoUpLoad {
     /** 
      *@param {Object} options - 整个参数
-     *@param {String} options.serverAccount- 服务器账号
+     *@param {string} options.serverAccount- 服务器账号
      *@param {password}  options.serverPassword - 服务器密码
      *@param {Number} options.serverUrl - 服务器地址
      *@param {Number} options.port - 端口
-     *@param {String} options.localPath - 本地build-dist之后的地址
-     *@param {String} options.remotePath - 远端目的文件地址
-     *@param {String} options.projectName - 项目名称
-     *@param {String} options.text - 钉钉提示内容
+     *@param {string} options.localPath - 本地build-dist之后的地址
+     *@param {string} options.remotePath - 远端目的文件地址
+     *@param {string} options.projectName - 项目名称
+     *@param {string} options.text - 钉钉提示内容
      * @param {string} options.webHookUrl - 钉钉推送地址
-     * @param {string} options.text - 提示内容
      * @param {string | number } options.keyWord - 机器人关键字
      */
     constructor(options) {
+        validate(schema, options, {
+            name: "BuildDoneAutoUpLoad",
+            baseDataPath: "options",
+        })
         this.options = options
     }
 
