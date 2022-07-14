@@ -38,8 +38,9 @@ class BuildDoneAutoUpLoad {
     }
 
     upLoadDist() {
-        const jsSrc = path.join(__dirname, this.options.localPath) + '/js'
-        const cssSrc = path.join(__dirname, this.distFileUrl) + '/css'
+        const jsSrc = options.localPath + 'js'
+        const cssSrc = options.localPath + 'css'
+        // 替换频率最高的两个文件
         const {
             serverUrl,
             port,
