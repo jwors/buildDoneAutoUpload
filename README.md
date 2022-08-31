@@ -4,6 +4,8 @@
     之前我们都是通过 filezilla ，所以也节省了一些时间，另外再通过DD机器人通知群里，就可以去检验了
 
 ## 使用方法
+    ~~~javascript
+    /**
     *@param {Object} options - 整个参数
     *@param {string} options.serverAccount- 服务器账号
     *@param {password}  options.serverPassword - 服务器密码
@@ -17,5 +19,13 @@
     *@param {string} options.text - 钉钉提示内容
     * @param {string} options.webHookUrl - 钉钉推送地址
     * @param {string | number } options.keyWord - 机器人关键字
-
-
+    * */
+     new BuildDoneAutoUpLoad({
+        serverAccount:'xxx',
+        serverPassword:'xxx',
+        serverUrl:'xxx',
+        remotePath:'xxx',
+        projectName:"/xxx/xx"
+        port:'8080'
+     })
+    ~~~
