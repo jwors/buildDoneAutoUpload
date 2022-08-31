@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbce9c49-db30-4066-ad7b-6c38b71a3d58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dingHint/dingHint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dingHint/dingHint.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656861389847</updated>
       <workItem from="1656861393079" duration="137000" />
+      <workItem from="1661852198262" duration="70000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,6 @@
 const Axios = require('axios')
 const ApplicationTypeHeader = "application/json;charset=utf-8";
 
-
 class DingHint {
     /**
      *
